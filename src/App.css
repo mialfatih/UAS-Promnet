@@ -1,0 +1,307 @@
+.navbar {
+  background-color: rgb(48, 48, 48);
+  /* navbar-dark bg-primary */
+}
+
+.navbar-brand {
+  font-weight: normal; /* Untuk membuat teks menjadi non-bold */
+  padding: 15px; /* Sesuaikan dengan nilai yang diinginkan */
+  color: #aaa; /* Warna abu-abu */
+}
+
+.navbar-brand,
+.navbar-brand:visited,
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: #aaa; /* Warna teks default */
+  transition: color 0.3s; /* Efek transisi perubahan warna */
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: rgb(68, 193, 197); /* Warna merah saat dihover atau di-klik */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(34, 34, 34);
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0; /* Sesuaikan dengan kebutuhan Anda */
+  z-index: 999; /* Menentukan lapisan di atas konten lain */
+}
+
+/* Aturan media query untuk perangkat mobile */
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 70px; /* Tinggi footer untuk layar kecil */
+  }
+
+  .footer span {
+    font-size: 14px; /* Ukuran font footer di layar kecil */
+  }
+}
+
+div.row {
+  max-height: calc(
+    400vh - 100px
+  ); /* Ukuran maksimum konten agar dapat discroll */
+  overflow-y: auto; /* Menampilkan scroll saat konten lebih panjang dari tinggi layar */
+}
+
+div.user-list {
+  padding-bottom: 200px; /* Sesuaikan nilai dengan tinggi footer */
+}
+
+.content {
+  padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
+}
+
+.text-center {
+  padding-top: 10px;
+  font-size: 40px; /* Ubah ukuran teks */
+  font-weight: bold; /* Teks menjadi bold */
+}
+
+.row {
+  padding-bottom: 50px;
+}
+
+.row2 {
+  padding-bottom: 20px;
+  font-family: poppins;
+  font-size: 22px;
+}
+
+.roww {
+  padding-bottom: 20px;
+  font-family: poppins;
+  font-size: 17px;
+}
+
+.number-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+}
+
+.decrement,
+.increment {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #fff; /* Mengatur warna background menjadi putih */
+}
+
+.decrement:focus,
+.increment:focus {
+  outline: none; /* Menghapus focus outline saat tombol di klik */
+}
+
+.decrement:active,
+.increment:active {
+  background-color: #e0e0e0; /* Mengubah warna background saat tombol ditekan */
+}
+
+.gender-radio {
+  display: flex;
+}
+
+.gender-radio label {
+  margin-right: 20px;
+}
+
+.gender-radio input[type="radio"] {
+  margin-right: 5px;
+}
+
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notification-checkmark {
+  font-size: 36px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+/* CreateUserComponent.css */
+
+.modal {
+  display: block; /* Munculkan modal */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Warna latar belakang semi-transparan */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CreateUserComponent.css */
+
+/* Tambahkan aturan media query untuk perangkat mobile */
+@media screen and (max-width: 600px) {
+  .card {
+    width: 90%; /* Lebar kartu menjadi lebih kecil untuk layar kecil */
+    margin: 0 auto; /* Posisi kartu ke tengah */
+  }
+
+  /* Perubahan tata letak elemen input */
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  /* Perubahan tampilan tombol simpan dan batal */
+  .btn {
+    width: 100%; /* Tombol mengambil lebar penuh */
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Aturan standar untuk sel dalam tabel */
+.table td,
+.table th {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Aturan media query untuk perangkat seluler */
+@media screen and (max-width: 768px) {
+  /* Tata letak untuk layar berukuran maksimum 768px (tablet dan perangkat seluler) */
+  .table td,
+  .table th {
+    display: block;
+    text-align: left;
+  }
+
+  /* Menyembunyikan header pada tampilan perangkat seluler */
+  .table thead {
+    display: none;
+  }
+
+  /* Menyembunyikan sel yang tidak diperlukan pada tampilan perangkat seluler */
+  .table tr {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  /* Memberikan warna latar belakang pada setiap baris untuk membedakan */
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Menyesuaikan ukuran font pada tampilan perangkat seluler */
+  .table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    float: left;
+    text-transform: uppercase;
+  }
+}
